@@ -14,7 +14,7 @@ class utils:
         }
         return headers
 
-    def commin_headers_put_delete_patch_cookie(self,basic_auth_value):
+    def common_headers_put_delete_patch_cookie(self,basic_auth_value):
         headers = {
             "Content-Type": "application/json",
             "Authorization" : "basic" + str(basic_auth_value)
@@ -23,7 +23,7 @@ class utils:
         return headers
 
 
-    def commin_headers_put_delete_patch_bearer_cookie(self,api_token):
+    def common_headers_put_delete_patch_bearer_cookie(self,api_token):
         headers = {
             "Content-Type": "application/json",
             "Authorization" : "bearer" + str(api_token)
@@ -32,7 +32,7 @@ class utils:
         return headers
 
 
-    def commin_headers_put_delete_patch_cookie(self,token):
+    def common_headers_put_delete_patch_cookie(self,token):
         headers = {
             "Content-Type": "application/json",
             "cookie": "token=" + str(token)

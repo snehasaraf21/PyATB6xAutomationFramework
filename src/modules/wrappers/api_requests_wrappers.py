@@ -24,7 +24,7 @@ def patch_request(url,auth,headers,payload,in_json):
         return patch_response,json()
     return patch_response
 
-def delete_request(url,auth,headers,payload,in_json):
+def delete_request(url,auth,headers,in_json):
     delete_response = requests.delete(url=url,auth=auth,headers=headers)
     if in_json is True:
         return delete_response,json()
